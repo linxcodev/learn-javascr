@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting started with javascript</title>
+</head>
+  <body>
+    <p id="paragraphs"></p>
+      <script>
+        // add content by id
+        document.getElementById('paragraphs').textContent = 'Hello Atom'
+
+        // add element
+        var div = document.createElement('div')
+        div.textContent = 'This is a text div!'
+        document.body.appendChild(div)
+        
+        // alert message
+        alert('Pause!')
+        console.log('Alert was dimissed')
+        
+        // prompt message
+        var age = prompt('Your Age')
+        console.log(age)
+        
+        // confirm
+        var conf = confirm('are You want delete this?')
+        console.log(conf)
+        
+        // canvas
+        var canvas = document.createElement('canvas')
+        canvas.width = 500
+        canvas.height = 250
+        var ctx = canvas.getContext('2d')
+        ctx.font = '30px Cursive'
+        ctx.fillText('Hello, worlds!', 50, 50)      
+        document.body.appendChild(canvas)
+      </script>
+  </body>
+</html>
