@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Built in constant</title>
+</head>
+<body>
+   <script>
+      // isNaN (Not a Number)
+      var check = isNaN("Hello, Worlds!")
+      var check1 = isNaN([1, 2])
+      var check2 = isNaN(NaN)      
+      console.log("Not Number =", check, check1, check2)
+      console.log(typeof NaN, NaN == NaN) // number, false
+
+      //  undefined and null
+      undefined == null // true
+      undefined === null // false
+      typeof null // object
+      typeof undefined // undefined
+      let f; // undefined
+      f == undefined // true
+
+      1 / 0; // Infinity
+      Infinity > 123192310293; // true
+      -Infinity < -123192310293; // true
+
+      // Math funct  
+      console.log("Math funct pow 4,2 =", Math.pow(4, 2))
+   </script> 
+</body>
+</html>
