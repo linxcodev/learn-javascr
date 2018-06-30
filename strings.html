@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        console.log('Lab Strings')
+        var singleQuote = 'Hello'
+        var doubleQoute = "Hello"
+        var backTicks = `hello`
+
+        // convert
+        // with func
+        String(32) // number to str
+        String(true) // bool to str 
+        String(null) // obj to str
+        // or
+        var nums = (45).toString() // "45"
+        var bools = (false).toString() // "false"
+        
+        //from charcode
+        "hello".charCodeAt(2) // 108
+        String.fromCharCode(104,101,108,108,111) // hello
+        
+        // create obj from str use new
+        var objstr = new String("I, am a String to obj")
+
+        // calling var with backtticks
+        var place = "World"
+        var greet = `Hello ${place}` // Helo World
+
+        // backslash str
+        var bcstr = String.raw`a\\b`
+
+        // reverse
+        // dipisah dulu, dibalik by pissah, digabung tanpa pemisah
+        "hello".split("").reverse().join("")
+
+        // substr
+        var substr = "0123456789abcdefg".slice(5,9) // "5678"
+        
+        // replace
+        var rep = "Hello, World!";
+        rep.replace( "Hello", "Bye" ); // "Bye, World!"
+
+        // upper and lower
+        var upper = "qwerty".toUpperCase() // QWERTY
+        var smal = "QWERTY".toLowerCase() // qwerty
+
+        // repeat
+        "abc".repeat(3) // abcabcabc
+    </script>
+</body>
+</html>
