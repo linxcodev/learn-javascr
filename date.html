@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Date</title>
+</head>
+<body>
+    <button onclick="dateNow()">Date Now</button>
+    <p id="date-p"></p>
+    <script>
+        console.log('Lab Date()')
+        
+        // convert to str
+        var dt = new Date()
+        var dtNow = dt.toString() // "Tue Jul 03 2018 10:28:09 GMT+0700 (WIB)"
+        dt.toISOString() // "2018-07-03T03:28:09.522Z"
+        // format is: YYYY-MM-DDTHH:mm:ss.sssZ
+        dt.toTimeString() // "13:20:26 GMT+0700 (WIB)"
+        dt.toDateString() // "Tue Jul 03 2018"
+        dt.toLocaleTimeString("zh") // "下午2:16:28" time chinesse
+
+        // function onclick 
+        function dateNow () {
+            document.getElementById("date-p").innerHTML = dtNow
+        }
+
+        // convert to json
+        dt.toJSON() // "2018-07-03T03:28:09.522Z"
+    </script>
+</body>
+</html>
