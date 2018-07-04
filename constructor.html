@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor Function</title>
+</head>
+<body>
+    <script>
+        console.log("Lab Constructor function")
+        function Cat(name) {
+            this.name = name
+            this.sounds = "Meow"
+        }
+        
+        // obj constructor
+        var cat = new Cat("Jeny")
+        cat.name // Jeny
+        cat.sounds // Meow
+
+        // prototype (inherit)
+        Cat.prototype.speak = function() {
+            this.sounds
+        } // or Cat.prototype.speak = "meong"
+        cat.speak // Meow
+
+        // constructor
+        cat.constructor // Cat function
+
+        // instance of
+        cat instanceof Cat; // true
+    </script>
+</body>
+</html>
